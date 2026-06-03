@@ -1,6 +1,3 @@
-Here is the high-speed, ultra-concise markdown for your **Day 3 Notes**. Dense walls of text are gone—everything is streamlined for rapid reference.
-Copy and paste this straight into your day3_notes.md file:
-```markdown
 # 📑 Day 3: Setting & Toggling Register States
 
 ### 🧠 Core Mechanics
@@ -73,10 +70,3 @@ Program End !!!
 ```
 
 ---
-
-### 🏁 Commit Log:
-* **Commit Message:** `docs: fast-track Day 3 register manipulation notes`
-
-Lock it in and have a great night! See you for Day 4! 🚀🔥
-
-```
