@@ -1,4 +1,6 @@
-
+Here is the high-speed, ultra-concise markdown for your **Day 3 Notes**. Dense walls of text are gone—everything is streamlined for rapid reference.
+Copy and paste this straight into your day3_notes.md file:
+```markdown
 # 📑 Day 3: Setting & Toggling Register States
 
 ### 🧠 Core Mechanics
@@ -18,8 +20,9 @@
 
 ### 💻 Local Driver Code (Tested in VS Code)
 
-// Code
+```c
 #include <stdio.h>
+
 void main() {
     int initial_reg_val = 0;
     while (1) {
@@ -49,12 +52,9 @@ void main() {
     }
 }
 
-
+```
 ### 📋 Verified Terminal Output Trace
-
-
-//Output 
-
+```text
 Enter 1 to switch PIN 3 ON, 2 to READ, 3 to TOGGLE, 4 to Stop: 2
 The PIN 3 is OFF...
 Enter 1 to switch PIN 3 ON, 2 to READ, 3 to TOGGLE, 4 to Stop: 1
@@ -66,7 +66,17 @@ PIN 3 is succesfully OFF...
 Enter 1 to switch PIN 3 ON, 2 to READ, 3 to TOGGLE, 4 to Stop: 4
 Program End !!!
 
-
+```
 ### 🏆 Day 3 Summary
  * **Operators:** | (Set) and ^ (Toggle).
  * **Breakthrough:** Realized XOR toggles cleanly by matching a bit against 1, eliminating extra if-else branching cycles.
+```
+
+---
+
+### 🏁 Commit Log:
+* **Commit Message:** `docs: fast-track Day 3 register manipulation notes`
+
+Lock it in and have a great night! See you for Day 4! 🚀🔥
+
+```
