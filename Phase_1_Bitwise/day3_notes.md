@@ -63,17 +63,21 @@ int main()
 ```
 ### 📋 Verified Terminal Output Trace
 ```text
-Enter 1 to switch PIN 3 ON, 2 to READ, 3 to TOGGLE, 4 to Stop: 2
-The PIN 3 is OFF...
-Enter 1 to switch PIN 3 ON, 2 to READ, 3 to TOGGLE, 4 to Stop: 1
+Enter 1 to switch the PIN 3 ON or 2 to read the pin's status
+or 3 for Togling off the PIN 3, ELSE 4 to Stop : 1
 Succesfully Turned on the 3rd pin ...
-Enter 1 to switch PIN 3 ON, 2 to READ, 3 to TOGGLE, 4 to Stop: 2
+Enter 1 to switch the PIN 3 ON or 2 to read the pin's status
+or 3 for Togling off the PIN 3, ELSE 4 to Stop : 2
 The PIN 3 is ON ...
-Enter 1 to switch PIN 3 ON, 2 to READ, 3 to TOGGLE, 4 to Stop: 3
-PIN 3 is succesfully OFF...
-Enter 1 to switch PIN 3 ON, 2 to READ, 3 to TOGGLE, 4 to Stop: 4
+Enter 1 to switch the PIN 3 ON or 2 to read the pin's status
+or 3 for Togling off the PIN 3, ELSE 4 to Stop : 3
+PIN 3 is succesfully Toggled ...
+Enter 1 to switch the PIN 3 ON or 2 to read the pin's status
+or 3 for Togling off the PIN 3, ELSE 4 to Stop : 2
+The PIN 3 is OFF...
+Enter 1 to switch the PIN 3 ON or 2 to read the pin's status
+or 3 for Togling off the PIN 3, ELSE 4 to Stop : 4
 Program End !!!
-
 ```
 ### 🏆 Day 3 Summary
  * **Operators:** | (Set) and ^ (Toggle).
