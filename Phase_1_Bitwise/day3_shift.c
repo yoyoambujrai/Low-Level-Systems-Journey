@@ -1,30 +1,43 @@
+// After optimimizig the code and removing the unneeded if - else statementd, here our code availabel below...
+
 #include <stdio.h>
 
-void main() {
+int main() 
+{
     int initial_reg_val = 0;
+    int usv;
+
     while (1) {
-        printf("Enter 1 to switch PIN 3 ON, 2 to READ, 3 to TOGGLE, 4 to Stop: ");
-        int usv;
+        printf("Enter 1 to switch the PIN 3 ON or 2 to read the pin's status\nor 3 for Togling off the PIN 3, ELSE 4 to Stop : ");
         scanf("%d", &usv);
         
         if (usv == 1) {
+            // Unconditional OR: Sets Pin 3 HIGH in 1 clock cycle without needing an if-check
             initial_reg_val = initial_reg_val | 8;
-            printf("PIN 3 forced ON.\n");
+            printf("Succesfully Turned on the 3rd pin ...\n");
         }
         else if (usv == 2) {
-            if ((initial_reg_val & 8) == 8) printf("PIN 3 is ON.\n");
-            else printf("PIN 3 is OFF.\n");
+            // Reading Logic via static mask checking
+            if ((initial_reg_val & 8) == 8) {
+                printf("The PIN 3 is ON ...\n");
+            }
+            else {
+                printf("The PIN 3 is OFF...\n");
+            }
         }
         else if (usv == 3) {
-            initial_reg_val = initial_reg_val ^ 8; // Unconditional single-cycle toggle!
-            printf("PIN 3 Toggled.\n");
+            // Unconditional XOR: Flipped blindly using a 1-mask (0^1=1, 1^1=0)
+            initial_reg_val = initial_reg_val ^ 8;
+            printf("PIN 3 is succesfully Toggled ...\n");
         }
         else if (usv == 4) {
             printf("Program End !!!\n");
             break;
         }
         else {
-            printf("INVALID INPUT !!!\n");
+            printf("INVALID INPUT !!!\n\tTry Again ...\n");
         }
     }
+
+    return 0;
 }
